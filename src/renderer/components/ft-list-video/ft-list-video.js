@@ -718,7 +718,7 @@ export default defineComponent({
       this.isVr360 = this.data.isVr360
       this.is3D = this.data.is3d
       this.hasCaptions = this.data.hasCaptions
-      this.isPremium = this.data.premium || false
+      this.isPremium = this.data.premium || this.data.viewCount === 0
       this.viewCount = this.data.viewCount
 
       if (typeof this.data.premiereDate !== 'undefined') {
